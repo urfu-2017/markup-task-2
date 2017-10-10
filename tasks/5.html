@@ -11,13 +11,17 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                #checkbox:checked ~ .tab {
+                    background: #000;
+                    color: #ffffff;
+                }
+
             </style>
 
             <section class="global-result">
                 <article class="global-scope">
                     <label for="checkbox">Black Theme</label>
-                    <input type="checkbox"><br>
+                    <input type="checkbox" id=checkbox><br>
                     <div class="tab">Text</div>
                 </article>
             </section>
