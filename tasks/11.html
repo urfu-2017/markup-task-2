@@ -11,7 +11,20 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                [type='email']
+                {
+                    border: 3px solid #ff6698;
+                }
+
+                [type='email']:valid
+                {
+                    border-color: #98ff66;
+                }
+                
+                [type='email']:focus
+                {
+                    border-color: #6698ff;
+                }
             </style>
 
             <section class="global-result">

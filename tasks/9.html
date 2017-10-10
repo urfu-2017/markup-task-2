@@ -11,7 +11,30 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                a[href]:visited
+                {
+                    color: #ffb366;
+                }
+
+                a[href]:hover
+                {
+                    color: #ff6698;
+                }
+
+                a[href]:hover ~ a 
+                {
+                    color: #aaa;
+                }
+
+                a[href]:active ~ a 
+                {
+                    color: #000;
+                }
+                
+                a[href]:active
+                {
+                    color: #98ff66;
+                }
             </style>
 
             <section class="global-result">
