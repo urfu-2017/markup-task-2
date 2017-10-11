@@ -11,7 +11,17 @@
 
         <main class="global-results">
             <style>
-                .global-scope_18 div:not(:hover)
+                div:hover
+                {
+                    opacity: 1;
+                }
+
+                article:hover > div:not(:hover)
+                {
+                    opacity: .25;
+                }
+
+                div
                 {
                     opacity: .5;
                 }
