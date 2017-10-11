@@ -14,24 +14,34 @@
             <style>
                 /* your styles here */
 
-                article :first-child:visited 
+                [href]
+                {
+                    color: #6698ff;
+                }
+
+                a:visited 
                 {
                     color: #ffb366;
                 }
 
-                article :first-child:hover 
+                a:hover
                 {
-                    color: #ff6698;
+                    opacity: .5;
                 }
 
-                article :first-child:active 
+                [href]:active 
                 {
                     color: #98ff66;
                 }
-                
-                article :last-child:hover 
+
+                [href]:hover
                 {
-                    opacity: .7;
+                    color: #ff6698;
+                }
+                
+                [href]:hover 
+                {
+                    opacity: 1;
                 }
             </style>
 
