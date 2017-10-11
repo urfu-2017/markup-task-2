@@ -11,7 +11,54 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                article.global-scope > div 
+                
+                {
+                    
+                    background: #ffb366;
+                    
+                }
+
+                article.global-scope > div > div 
+                
+                {
+                    
+                    background: white;
+                    
+                }
+
+                article.global-scope :first-child :last-child 
+                
+                {
+                    
+                    background: #98ff66;
+                    
+                }
+
+                article.global-scope :last-child :first-child 
+                
+                {
+                    
+                    background: #ff6;
+                    
+                }
+
+                article.global-scope :nth-child(2) :nth-child(even) 
+                
+                {
+                    
+                    background: #ff6698;
+                    
+                }
+
+                article.global-scope :nth-child(3) :nth-child(odd) 
+                
+                {
+                    
+                    background: #6698ff;
+                    
+                }
+                
             </style>
 
             <section class="global-result">
