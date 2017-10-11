@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
+        <meta charset="utf8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
@@ -11,7 +12,37 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope > a:first-child
+                {
+                    color: #6698ff;
+                }
+
+                .global-scope > a:first-child:hover,
+                .global-scope > a:first-child:visited:hover
+                {
+                    color: #ff6698;
+                }
+
+                .global-scope > a:first-child:visited
+                {
+                    color: #ffb366;
+                }
+
+                .global-scope > a:first-child:active
+                {
+                    color: #98ff66;
+                }
+
+                .global-scope > a:last-child:hover,
+                .global-scope > a:last-child:visited:hover
+                {
+                    opacity: .5;
+                }
+
+                .global-scope > a:last-child:active
+                {
+                    opacity: 1;
+                }
             </style>
 
             <section class="global-result">
