@@ -7,33 +7,37 @@
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>outline: 1px solid #ff6698</code></p>
+        <p>Решите задачу, используя <code>opacity: &lt;value&gt;</code></p>
 
         <main class="global-results">
             <style>
-            .global-scope input:checked ~ input
+            .global-scope div
             {
-                outline: 1px solid #ff6698;
+                opacity: .5;
+            }
+            
+            article:hover
+            {
+                opacity: .7 ;
             }
 
-            .global-scope input[type='checkbox']:checked
+            .global-scope div:hover
             {
-                outline: none;
+                opacity: 1;
             }
-                </style>
+            </style>
 
             <section class="global-result">
                 <article class="global-scope">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </article>
             </section>
 
