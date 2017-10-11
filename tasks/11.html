@@ -11,17 +11,17 @@
 
         <main class="global-results">
             <style>
-                [type='email']
-                {
-                    border: 3px solid #98ff66;
-                }
-
-                [type='email'][value*='invalid']
+                input
                 {
                     border: 3px solid #ff6698;
                 }
 
-                [type='email']:focus
+                input:valid
+                {
+                    border: 3px solid #98ff66;
+                }
+
+                input:focus
                 {
                     border: 3px solid #6698ff;
                 }
