@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
+        <meta charset="UTF-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
@@ -12,6 +13,11 @@
         <main class="global-results">
             <style>
                 /* your styles here */
+
+                [href*='//']:not([href*='my-site.ru']) 
+                {
+                    color: #ff6698;
+                }
             </style>
 
             <section class="global-result">
@@ -33,7 +39,7 @@
                             <a href="http://vk.com" rel="external" target="_blank">Ссылка 4</a>
                         </li>
                         <li>
-                            <a href="//google.com" rel="external" target="_blank">Ссылка 5</a>
+                            <a href="//pornhub.com" rel="external" target="_blank">Ссылка 5</a>
                         </li>
                     </ul>
                 </article>

@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
+        <meta charset="UTF-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
@@ -12,6 +13,16 @@
         <main class="global-results">
             <style>
                 /* your styles here */
+
+                article :nth-child(n+5) 
+                {
+                    outline: 1px solid #f698;
+                }
+
+                input:checked 
+                {
+                    outline: none;
+                }
             </style>
 
             <section class="global-result">

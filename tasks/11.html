@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
+        <meta charset="UTF-8">                
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
@@ -12,6 +13,21 @@
         <main class="global-results">
             <style>
                 /* your styles here */
+
+                .global-scope :nth-child(n) 
+                {
+                    border: 3px solid #ff6698;
+                }
+
+                .global-scope :last-child 
+                {
+                    border-color: #98ff66;
+                }
+
+                .global-scope :focus 
+                {
+                    border-color: #6698ff;
+                }
             </style>
 
             <section class="global-result">
