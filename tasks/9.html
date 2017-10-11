@@ -17,7 +17,8 @@
                     color: #6698ff;
                 }
 
-                .global-scope > a:first-child:hover
+                .global-scope > a:first-child:hover,
+                .global-scope > a:first-child:visited:hover
                 {
                     color: #ff6698;
                 }
@@ -32,9 +33,15 @@
                     color: #98ff66;
                 }
 
-                .global-scope > a:first-child:hover ~ a
+                .global-scope > a:last-child:hover,
+                .global-scope > a:last-child:visited:hover
                 {
                     opacity: .5;
+                }
+
+                .global-scope > a:last-child:active
+                {
+                    opacity: 1;
                 }
             </style>
 
