@@ -11,29 +11,35 @@
 
         <main class="global-results">
             <style>
-                article a[href]:hover
+                .global-scope a[href]
                 {
-                    color: #ff6698;
+                    color: #6698ff;
                 }
 
-                article a[href]:hover + a
+                .global-scope a:visited
+                {
+                    color: #ffb366;
+                }
+
+                .global-scope a:hover
                 {
                     opacity: .5;
                 }
 
-                article a[href]:active
+                .global-scope a[href]:hover
                 {
-                    color: #98ff66;
+                    color: #ff6698;
+                    opacity: 1;
                 }
 
-                article a[href]:active + a
+                .global-scope a:active
                 {
                     opacity: 1;
                 }
 
-                article a:visited
+                .global-scope a[href]:active
                 {
-                    color: #ffb366;
+                    color: #98ff66;
                 }
 
             </style>
