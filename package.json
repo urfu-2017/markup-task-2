@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "stylelint": "7.3.1",
-    "stylelint-config-hrundel": "latest",
+    "stylelint-config-hrundel": "1.0.3",
     "stylelint-processor-html": "1.0.0"
   }
 }
