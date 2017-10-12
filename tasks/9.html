@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
+        <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
@@ -11,7 +12,25 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .link[href^="https://ya.ru"]:hover {
+                    color: #ff6698;
+                }
+
+                .link[href^="https://ya.ru"]:hover + .link {
+                    opacity: 0.5;
+                }
+
+                .link[href^="https://ya.ru"]:visited {
+                    color: #ffb366;
+                }
+
+                .link[href^="https://ya.ru"]:active {
+                    color: #98ff66;
+                }
+                
+                .link[href^="https://ya.ru"]:active + .link {
+                    opacity: 1;
+                }
             </style>
 
             <section class="global-result">
