@@ -11,7 +11,16 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                input:checked
+                {
+                    outline: 1px solid white !important;
+                }
+
+                input:checked ~ input
+                {
+                    display: inline-block;
+                    outline: 1px solid #ff6698;
+                }
             </style>
 
             <section class="global-result">
