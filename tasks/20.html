@@ -11,7 +11,12 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .red-gt2 div:nth-child(2) ~ div,
+                .red-gt2 div:first-child:not(:last-child):not(:nth-last-child(2)),
+                .red-gt2 div:nth-child(2):not(:last-child)
+                {
+                    background: #ff6698;
+                }
             </style>
 
             <section class="global-result">
