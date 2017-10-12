@@ -13,25 +13,41 @@
             <style>
                 /* your styles here */
 
-                a.link:hover
+                .link
                 {
-                    color: #ff6698;
+                    color: #6698ff;
                 }
 
-                a.link:active
-                {
-                    color: #98ff66;
-                }
-
-                a.link:visited
+                .link:visited
                 {
                     color: #ffb366;
                 }
 
-                a.link:not([href]):hover
+                .link:hover
                 {
-                    color: black;
+                    color: #ff6698;
+                }
+
+                .link:active
+                {
+                    color: #98ff66;
+                }
+
+                .link + .link
+                {
+                    color: #000;
+                }
+
+                .link:not([href]):hover
+                {
+                    color: #000;
                     opacity: .3;
+                }
+
+                .link:not([href]):active
+                {
+                    color: #000;
+                    opacity: 1;
                 }
 
             </style>
