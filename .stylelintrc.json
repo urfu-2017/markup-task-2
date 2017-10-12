@@ -1,4 +1,6 @@
 {
  "extends": "stylelint-config-hrundel",
- "processors": ["stylelint-processor-html"]
+ "processors": ["stylelint-processor-html"], 
+ "rules": {
+ "selector-no-id": null}
 }
