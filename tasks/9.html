@@ -11,7 +11,32 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .link:hover
+                {
+                    opacity: .5;
+                }
+
+                .link:active,
+                .link:visited
+                {
+                    opacity: 1;
+                }
+
+                .link[href='https://ya.ru']:visited
+                {
+                    color: #ffb366;
+                }
+
+                .link[href='https://ya.ru']:hover
+                {
+                    color: #ff6698;
+                    opacity: 1;
+                }
+
+                .link[href='https://ya.ru']:active
+                {
+                    color: #98ff66;
+                }
             </style>
 
             <section class="global-result">
