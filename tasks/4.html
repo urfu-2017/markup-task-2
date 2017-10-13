@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
@@ -12,8 +12,17 @@
         <main class="global-results">
             <style>
                 /* your styles here */
-            </style>
+                .global-scope > article
+                {
+                    border-top: 1px solid #000;
+                }
 
+                .global-scope > article:nth-child(3)
+                {
+                    border-top: none;
+                }
+
+            </style>
             <section class="global-result">
                 <article class="global-scope">
                     <h1>Заголовок</h1>
