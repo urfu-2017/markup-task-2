@@ -11,7 +11,13 @@
 
         <main class="global-results">
             <style>
-                .tab
+                input:not(:checked) ~ div
+                {
+                    background: white;
+                    color: black;
+                }
+
+                input:checked ~ div
                 {
                     background: black;
                     color: white;
@@ -21,7 +27,7 @@
             <section class="global-result">
                 <article class="global-scope">
                     <label for="checkbox">Black Theme</label>
-                    <input checked id="checkbox" type="checkbox"><br>
+                    <input id="checkbox" type="checkbox"><br>
                     <div class="tab">Text</div>
                 </article>
             </section>
