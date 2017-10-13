@@ -16,12 +16,16 @@
 
     <main class="global-results">
         <style>
-            /* your styles here */
-
-            :checked ~ div 
+            input:checked ~ div
             {
                 color: white;
                 background: black;
+            }
+
+            input:not(:checked) ~ div
+            {
+                color: black;
+                background: white;
             }
         </style>
 
@@ -45,6 +49,7 @@
     </nav>
 
     <script src="../global.js"></script>
+
 </body>
 
 </html>

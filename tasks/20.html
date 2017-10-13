@@ -16,10 +16,8 @@
 
     <main class="global-results">
         <style>
-            /* your styles here */
-
-            div:empty:first-child:nth-last-child(n+3),
-            div:empty:first-child:nth-last-child(n+3) ~ div:empty 
+            div > div:first-child:nth-last-child(n+3),
+            div > div:nth-last-child(n+3) ~ div
             {
                 background: #ff6698;
             }
@@ -59,6 +57,7 @@
     </nav>
 
     <script src="../global.js"></script>
+
 </body>
 
 </html>
