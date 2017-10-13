@@ -11,7 +11,11 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope a[rel="external"],
+                .global-scope a:not([href*="my-site.ru"]):not([href^="/"])
+                {
+                    color: #ff6698;
+                }
             </style>
 
             <section class="global-result">
