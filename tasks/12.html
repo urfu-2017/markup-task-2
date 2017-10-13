@@ -11,13 +11,12 @@
 
         <main class="global-results">
             <style>
-                div:nth-child(even),
-                div:nth-child(5)
+                div:empty
                 {
                     background: #ff6 !important;
                 }
 
-                div:nth-child(odd)
+                div:not(:empty)
                 {
                     background: #ffb366;
                 }
