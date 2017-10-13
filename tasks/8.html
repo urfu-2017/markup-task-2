@@ -8,10 +8,12 @@
     <body>
         <h1 class="global-heading">&nbsp;</h1>
         <p>Выделите только ссылки на внешние относительно my-site.ru ресурсы, используя <code>color: &lt;color&gt;</code></p>
-
         <main class="global-results">
             <style>
-                /* your styles here */
+            a[href*='//']:not([href*='my-site.ru']) 
+            {
+                color: #ff6698;
+            }
             </style>
 
             <section class="global-result">
