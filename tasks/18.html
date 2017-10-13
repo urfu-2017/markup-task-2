@@ -11,7 +11,21 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div
+                {
+                    opacity: .5;
+                }
+
+                article:hover div:not(:hover)
+                {
+                    opacity: .25;
+                }
+
+                div:hover
+                {
+                    opacity: 1;
+                }
+
             </style>
 
             <section class="global-result">
