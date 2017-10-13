@@ -11,20 +11,14 @@
 
         <main class="global-results">
             <style>
-                a:hover
+                a:not([href]):hover
                 {
                     opacity: .5;
                 }
 
-                a:active,
-                a:visited
+                a:not([href]):active,
+                a:not([href]):visited
                 {
-                    opacity: 1;
-                }
-                
-                a[href='https://ya.ru']:hover
-                {
-                    color: #ff6698;
                     opacity: 1;
                 }
 
@@ -36,6 +30,11 @@
                 a[href='https://ya.ru']:visited
                 {
                     color: #ffb366;
+                }
+
+                a[href='https://ya.ru']:hover
+                {
+                    color: #ff6698;
                 }
             </style>
 
