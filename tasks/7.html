@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
@@ -12,6 +12,12 @@
         <main class="global-results">
             <style>
                 /* your styles here */
+
+                div:nth-child(2),
+                div:nth-child(2) + div
+                {
+                    opacity: .3;
+                }
             </style>
 
             <section class="global-result">
