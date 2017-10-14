@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
@@ -11,7 +11,18 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div
+                {
+                    background-color: #ff6;
+                }
+
+                .global-scope :first-child,
+                .global-scope :last-child,
+                .global-scope :nth-child(3),
+                .global-scope :nth-child(7)
+                {
+                    background-color: #ffb366;
+                }
             </style>
 
             <section class="global-result">
