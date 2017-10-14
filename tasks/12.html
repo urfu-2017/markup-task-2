@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
@@ -12,6 +12,17 @@
         <main class="global-results">
             <style>
                 /* your styles here */
+
+                div:nth-child(2n+1)
+                {
+                    background-color: #ffb366;
+                }
+
+                div:nth-of-type(2n),
+                div:nth-of-type(5)
+                {
+                    background-color: #ff6;
+                }
             </style>
 
             <section class="global-result">
