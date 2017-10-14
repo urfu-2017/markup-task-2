@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>CSS Селекторс 2000</title>
 
         <link rel="stylesheet" type="text/css" href="../global.css">
@@ -11,7 +12,12 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope div:not(:empty) {
+                    background: #ffb366;
+                }
+                .global-scope div:empty {
+                    background: #ffff66;
+                }
             </style>
 
             <section class="global-result">
