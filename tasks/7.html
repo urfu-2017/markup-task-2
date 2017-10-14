@@ -10,8 +10,16 @@
         <p>Решите задачу, используя <code>opacity: &lt;value&gt;</code>, где <code>value</code> – непрозрачность от 0 до 1</p>
 
         <main class="global-results">
-            <style>
-                /* your styles here */
+            <style>  
+                div img
+                {
+                    opacity: .3;
+                }
+
+                div img[alt*='css']
+                {
+                    opacity: 1;
+                }
             </style>
 
             <section class="global-result">
