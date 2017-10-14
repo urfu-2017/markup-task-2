@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>CSS Селекторс 2000</title>
-
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../global.css">
 </head>
 <body>
@@ -11,8 +11,12 @@
 
 <main class="global-results">
     <style>
-        input:checked + br + div {
+        input:checked ~ div.tab {
             background: black;
+            color: white;
+        }
+        input {
+            background: #3B99FC;
             color: white;
         }
     </style>
