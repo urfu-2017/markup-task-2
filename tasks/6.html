@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>CSS Селекторс 2000</title>
+<head>
+    <title>CSS Селекторс 2000</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
+<body>
+<h1 class="global-heading">&nbsp;</h1>
+<p>Решите задачу, используя <code>color: &lt;color&gt;</code></p>
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>color: &lt;color&gt;</code></p>
+<main class="global-results">
+    <style>
+        [href*=yandex] {
+            color: #FD6FA9;
+        }
+    </style>
 
-        <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
+    <section class="global-result">
+        <article class="global-scope">
+            <a href="https://vk.ru">vk.ru</a>
+            <a href="https://yandex.ru">yandex.ru</a>
+            <a href="https://market.yandex.ru/">market.yandex.ru</a>
+        </article>
+    </section>
 
-            <section class="global-result">
-                <article class="global-scope">
-                    <a href="https://vk.ru">vk.ru</a>
-                    <a href="https://yandex.ru">yandex.ru</a>
-                    <a href="https://market.yandex.ru/">market.yandex.ru</a>
-                </article>
-            </section>
+    <section class="global-result">
+        <img class="global-goal">
+    </section>
+</main>
 
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
+<nav class="global-nav">
+    <a class="global-prev">Предыдущее</a>
+    <a class="global-next">Следующее</a>
+</nav>
 
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
-
-        <script src="../global.js"></script>
-    </body>
+<script src="../global.js"></script>
+</body>
 </html>
