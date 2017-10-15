@@ -11,7 +11,8 @@
 
         <main class="global-results">
             <style>
-                .global-scope a[target='_blank']
+                .global-scope a:not([href*='my-site.ru'])[href^='http'],
+                a:not([href*='my-site.ru'])[href^='//']
                 {
                     color: red;
                 }
