@@ -13,12 +13,17 @@
             <style>
                 .global-scope > div
                 {
-                    opacity: .5;
+                    opacity: 0.25;
                 }
 
                 .global-scope > div:hover
                 {
                     opacity: 1;
+                }
+
+                .global-scope:not(:hover) > div
+                {
+                    opacity: .5;
                 }
             </style>
 
