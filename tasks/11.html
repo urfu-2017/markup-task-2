@@ -11,7 +11,20 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope > input
+                {
+                    border: 3px solid red;
+                }
+
+                .global-scope > input:valid
+                {
+                    border: 3px solid green;
+                }
+
+                .global-scope > input:focus
+                {
+                    border: 3px solid blue;
+                }
             </style>
 
             <section class="global-result">

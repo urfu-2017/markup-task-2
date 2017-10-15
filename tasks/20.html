@@ -11,7 +11,17 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope > div > div
+                {
+                    background: #ff6698;
+                }
+
+                .global-scope > div > div:only-child,
+                .global-scope > div > div:first-child + div:last-child,
+                .global-scope > div > div:first-child:nth-last-child(2)
+                {
+                    background: white;
+                }
             </style>
 
             <section class="global-result">
