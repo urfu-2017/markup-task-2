@@ -11,22 +11,22 @@
 
         <main class="global-results">
             <style>
-                .global-scope .link:first-child:visited
+                .global-scope a[href]:visited
                 {
                     color: #ffb366;
                 }
 
-                .global-scope .link:first-child:hover
+                .global-scope a[href]:hover
                 {
                     color: #ff6698;
                 }
 
-                .global-scope .link:first-child:hover:not(:active) ~ .link
+                .global-scope a[href]:hover:not(:active) + a
                 {
                     opacity: .5;
                 }
 
-                .global-scope .link:first-child:active
+                .global-scope a[href]:active
                 {
                     color: #98ff66;
                 }

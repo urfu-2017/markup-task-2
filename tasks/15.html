@@ -10,7 +10,7 @@
         <p>Выделите ссылки на скачивание zip-файлов</p>
         <main class="global-results">
             <style>
-                a[href$='.zip']::after
+                a[href$='.zip'][download]::after
                 {
                     content: ' ↓';
                 }
