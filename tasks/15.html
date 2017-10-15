@@ -8,10 +8,12 @@
     <body>
         <h1 class="global-heading">&nbsp;</h1>
         <p>Выделите ссылки на скачивание zip-файлов</p>
-
         <main class="global-results">
             <style>
-                /* your styles here */
+                a[href$='.zip'][download]::after
+                {
+                    content: ' ↓';
+                }
             </style>
 
             <section class="global-result">
