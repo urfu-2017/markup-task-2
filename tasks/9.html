@@ -11,7 +11,32 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                article :first-child:visited
+                {
+                    color: #ffb366;
+                }
+
+                article :first-child:hover
+                {
+                    color: #ff6698;
+                }
+
+                article :first-child:active
+                {
+                    color: #98ff66;
+                }
+
+                article :last-child:hover
+                {
+                    opacity: .2;
+                }
+
+                article :last-child:active,
+                article :last-child:visited
+                {
+                    opacity: 1;
+                    color: #000;
+                }
             </style>
 
             <section class="global-result">
