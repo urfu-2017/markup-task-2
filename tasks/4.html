@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>CSS Селекторс 2000</title>
 
         <link rel="stylesheet" type="text/css" href="../global.css">
@@ -11,7 +12,10 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                article:not(:nth-of-type(1))
+                {
+                    border-top: 1px solid #000
+                }
             </style>
 
             <section class="global-result">
