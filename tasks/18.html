@@ -11,7 +11,23 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope:hover > div
+                {
+                    opacity: .2;
+                    /* background: green; */
+                }
+
+                .global-scope > div:hover
+                {
+                    opacity: 1;
+                    /* background: yellow; */
+                }
+
+                .global-scope > div
+                {
+                    opacity: .5;
+                    /* background: red; */
+                }
             </style>
 
             <section class="global-result">
