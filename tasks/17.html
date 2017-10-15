@@ -11,14 +11,14 @@
 
         <main class="global-results">
             <style>
-                input[type='checkbox']:checked ~ input[type='checkbox']
+                input:checked ~ input
                 {
                     outline: 1px solid #ff6698;
                 }
 
-                input[type='checkbox']:checked
+                .global-scope > input:checked
                 {
-                    outline: none !important;
+                    outline: none;
                 }
             </style>
 
