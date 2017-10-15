@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>CSS Селекторс 2000</title>
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>color: &lt;color&gt;</code> и <code>opacity: &lt;value&gt;</code></p>
+<head>
+    <title>CSS Селекторс 2000</title>
 
-        <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
 
-            <section class="global-result">
-                <article class="global-scope">
-                    <a class="link" href="https://ya.ru">link</a>
-                    <a class="link">pseudolink</a>
-                </article>
-            </section>
+<body>
+    <h1 class="global-heading">&nbsp;</h1>
+    <p>Решите задачу, используя
+        <code>color: &lt;color&gt;</code> и
+        <code>opacity: &lt;value&gt;</code>
+    </p>
 
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
+    <main class="global-results">
+        <style>
+            /* your styles here */
 
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
+            a.link:first-of-type {
+                color: #6698ff;
+            }
 
-        <script src="../global.js"></script>
-    </body>
+            a.link:visited:first-of-type {
+                color: #ffb366;
+            }
+
+            a.link:hover:first-of-type {
+                color: #ff6698;
+            }
+
+            a.link:hover:first-of-type~a.link {
+                opacity: 0.5;
+            }
+
+            a.link:active:first-of-type {
+                color: #98ff66;
+            }
+
+            a.link:active:first-of-type~a.link {
+                opacity: 1;
+            }
+        </style>
+
+        <section class="global-result">
+            <article class="global-scope">
+                <a class="link" href="https://ya.ru">link</a>
+                <a class="link">pseudolink</a>
+            </article>
+        </section>
+
+        <section class="global-result">
+            <img class="global-goal">
+        </section>
+    </main>
+
+    <nav class="global-nav">
+        <a class="global-prev">Предыдущее</a>
+        <a class="global-next">Следующее</a>
+    </nav>
+
+    <script src="../global.js"></script>
+</body>
+
 </html>
