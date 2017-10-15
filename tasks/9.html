@@ -11,7 +11,28 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope .link[href]:hover 
+                {
+                    color: #ff6698; 
+                }
+                .global-scope a[href]:visited 
+                {
+                    color: #ffb366; 
+                }
+                .global-scope .link[href]:active 
+                {
+                    color: #98ff66;
+                }
+                .global-scope .link:not([href]):active,
+                .global-scope .link:not([href]):visited 
+                {
+                    opacity: 1;
+                }
+                .global-scope a:not([href]):hover 
+                {
+
+                    opacity: 0.5;
+                }
             </style>
 
             <section class="global-result">
