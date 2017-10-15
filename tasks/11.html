@@ -11,7 +11,20 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                [value^='invalid']
+                {
+                    border: 3px solid #ff6698;
+                }
+
+                [value^='email']
+                {
+                    border: 3px solid #98ff66;
+                }
+
+                [value^='invalid']:hover
+                {
+                    border: 3px solid #6698ff;
+                }
             </style>
 
             <section class="global-result">
