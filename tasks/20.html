@@ -11,7 +11,11 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div > div:nth-last-child(n+3),
+                div > div:nth-last-child(n+3) ~ div
+                {
+                    background: #fd6fa9;
+                }
             </style>
 
             <section class="global-result">

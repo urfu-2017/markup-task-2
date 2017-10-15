@@ -11,7 +11,20 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                input:not(:valid)
+                {
+                    border: 3px solid #fd6899;
+                }
+
+                input:valid
+                {
+                    border: 3px solid #9bfd6f;
+                }
+
+                input:focus
+                {
+                    border: 3px solid #699dfc;
+                }
             </style>
 
             <section class="global-result">
