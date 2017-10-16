@@ -11,29 +11,25 @@
 
         <main class="global-results">
             <style>
-                [href='https://ya.ru']:hover
+                .link[href]:hover
                 {
-                    color: #ff6698 !important;
+                    color: #ff6698;
+                    opacity: 1;
                 }
-
-                [href='https://ya.ru']:focus
-                {
-                    color: #98ff66 !important;
-                }
-
-                [href='https://ya.ru']:visited
-                {
-                    color: #ffb366;
-                }
-
-                [href='https://ya.ru']:hover + a
+                
+                .link:hover
                 {
                     opacity: .3;
                 }
 
-                [href='https://ya.ru']:focus + a
+                .link[href]:focus
                 {
-                    opacity: 1;
+                    color: #98ff66;
+                }
+
+                .link:visited
+                {
+                    color: #ffb366;
                 }
 
             </style>
@@ -58,3 +54,4 @@
         <script src="../global.js"></script>
     </body>
 </html>
+
