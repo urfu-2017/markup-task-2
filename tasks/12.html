@@ -13,13 +13,12 @@
             <style>
                 /* your styles here */
 
-                div:nth-child(2n+1)
+                div:not(:empty)
                 {
                     background-color: #ffb366;
                 }
 
-                div:nth-of-type(2n),
-                div:nth-of-type(5)
+                div:empty
                 {
                     background-color: #ff6;
                 }

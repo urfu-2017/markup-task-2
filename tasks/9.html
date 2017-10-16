@@ -14,17 +14,18 @@
             <style>
                 /* your styles here */
 
-                .link[href*='ya']:hover
+                a.link[href*='ya']:hover
                 {
                     color: #ff6698;
+                    opacity: 1;
                 }
 
                 .link:hover
                 {
-                    color: grey;
+                    opacity: .5;
                 }
 
-                .link[href*='ya']:active
+                a.link[href*='ya']:active
                 {
                     color: #98ff66;
                 }
@@ -33,6 +34,12 @@
                 {
                     color: #ffb366;
                 }
+
+                .link:active
+                {
+                    opacity: 1;
+                }
+
             </style>
 
             <section class='global-result'>
