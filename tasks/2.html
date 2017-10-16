@@ -11,7 +11,26 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div:nth-child(2n)
+                {
+                    background: rgb(255, 100, 150);
+                }
+
+                div:not(:nth-child(3n))
+                {
+                    border: 2px solid #000;
+                }
+
+                div.c1.c2
+                {
+                    background: rgb(100, 150, 255);
+                }
+
+                div.c2
+                {
+                    background: rgb(255, 180, 100);
+                }
+
             </style>
 
             <section class="global-result">

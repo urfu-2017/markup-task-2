@@ -11,7 +11,35 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div
+                {
+                    background: rgb(255, 180, 100);
+                }
+
+                div:empty
+                {
+                    background: rgb(255,255,255);
+                }
+
+                div:first-child div:last-child
+                {
+                    background: rgb(150, 255, 100);
+                }
+
+                div:last-child div:first-child
+                {
+                    background: rgb(255, 255, 100);
+                }
+
+                div:nth-child(2) div:nth-child(2n)
+                {
+                    background: rgb(255, 100, 150);
+                }
+
+                div:nth-child(3) div:nth-child(2n+1)
+                {
+                    background: rgb(100, 150, 255);
+                }
             </style>
 
             <section class="global-result">
