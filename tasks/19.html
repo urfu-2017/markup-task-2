@@ -11,7 +11,35 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                article > div 
+				{
+                    background: #ffb366;
+				}
+
+				article > div > div
+				{
+                    background: #fff;
+				}
+
+				article > div:nth-child(1) > div:nth-last-child(1)
+				{
+                    background: #98ff66;
+				}
+
+				article > div:nth-child(2) > div:nth-child(even)
+				{
+                    background: #ff6698;
+				}
+
+				article > div:nth-last-child(2) > div:nth-child(odd)
+				{
+                    background: #6698ff;
+				}
+
+				article > div:nth-last-child(1) > div:first-of-type
+				{
+                    background: #ff6;
+				}
             </style>
 
             <section class="global-result">
