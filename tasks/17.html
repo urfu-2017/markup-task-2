@@ -13,15 +13,11 @@
             <style>
                 /* your styles here */
                 
-                .global-scope input:checked ~ input
+                 input:checked ~ input:not(:checked)
                 {
                     outline: 1px solid #ff6698;
                 }
 
-                .global-result .global-scope input:checked
-                {
-                    outline: none;
-                }
             </style>
 
             <section class="global-result">

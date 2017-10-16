@@ -13,15 +13,17 @@
             <style>
                 /* your styles here */
 
-                .global-scope div
+                div:empty
+                {
+                    background: #ff6;
+                }
+
+                div:not(:empty)
                 {
                     background: #ffb366;
                 }
 
-                .global-scope div:empty
-                {
-                    background: #ff6;
-                }
+
             </style>
 
             <section class="global-result">
