@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
@@ -12,14 +12,14 @@
 
         <main class="global-results">
             <style>
+                input[type='checkbox']:checked ~ input:checked
+                {
+                    outline: none;
+                }
+
                 input[type='checkbox']:checked ~ input
                 {
                     outline: 1px solid #ff6698;
-                }
-
-                input[type='checkbox']:checked
-                {
-                    outline: none !important;
                 }
             </style>
 

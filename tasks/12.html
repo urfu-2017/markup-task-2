@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
@@ -12,15 +12,12 @@
 
         <main class="global-results">
             <style>
-                div
+                div:empty
                 {
                     background: #ff6;
                 }
 
-                div:first-of-type,
-                div:last-of-type,
-                div:nth-of-type(3),
-                div:nth-last-of-type(3)
+                div:not(empty)
                 {
                     background: #ffb366;
                 }

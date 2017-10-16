@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
@@ -12,14 +12,9 @@
 
         <main class="global-results">
             <style>
-                a[href$='ya.ru']:hover
+                a[href$='ya.ru']
                 {
-                    color: #ff6698;
-                }
-
-                a[href$='ya.ru']:active
-                {
-                    color: #98ff66;
+                    color: #6698ff;
                 }
 
                 a[href$='ya.ru']:visited
@@ -27,7 +22,23 @@
                     color: #ffb366;
                 }
 
-                a:not([href$='ya.ru']):hover
+                a[href$='ya.ru']:hover
+                {
+                    color: #ff6698;
+                    opacity: 1;
+                }
+
+                a[href$='ya.ru']:active
+                {
+                    color: #98ff66;
+                }
+
+                .link:active
+                {
+                    opacity: 1;
+                }
+
+                .link:hover
                 {
                     opacity: .5;
                 }
