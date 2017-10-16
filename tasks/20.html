@@ -11,19 +11,10 @@
 
         <main class="global-results">
             <style>
-                .red-gt2 div:not(:only-of-type)
+                .red-gt2 div:nth-last-of-type(n+3),
+                .red-gt2 div:nth-last-of-type(n+3) ~ div
                 {
                     background: #ff6698;
-                }
-
-                .red-gt2 div:nth-of-type(2):last-of-type
-                {
-                    background: #fff;
-                }
-
-                .red-gt2 div:nth-last-of-type(2):first-of-type
-                {
-                    background: #fff;
                 }
             </style>
 
