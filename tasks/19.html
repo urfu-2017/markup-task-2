@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
@@ -11,7 +11,29 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div {
+                    background: #ffb366;;
+                }
+
+                div > div {
+                    background: white;
+                }
+
+                article :first-child :last-child {
+                    background: #98ff66;
+                }
+
+                article :last-child :first-child {
+                    background: #ffff66;
+                }
+
+                div:nth-of-type(2) div:nth-of-type(even) {
+                    background: #ff6698;
+                }
+
+                div:nth-of-type(3) div:nth-of-type(odd) {
+                    background: #6698ff;
+                }
             </style>
 
             <section class="global-result">
