@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>CSS Селекторс 2000</title>
+    <head>
+        <title>CSS Селекторс 2000</title>
 
-    <link rel="stylesheet" type="text/css" href="../global.css">
-    <style>
-        .red-gt2 :nth-last-child(n+3),
-        .red-gt2 :nth-last-child(n+3) ~ div
-        {
-            background: #ff6698;
-        }
-    </style>
-</head>
-<body>
-<h1 class="global-heading">&nbsp;</h1>
-<p><strong>Необязательная задача.</strong> Выделите все внутренние элементы там, где их больше 2,
-    используя <code>background: &lt;color&gt;</code> и самую сильную магию</p>
+        <link rel="stylesheet" type="text/css" href="../global.css">
+    </head>
+    <body>
+        <h1 class="global-heading">&nbsp;</h1>
+        <p><strong>Необязательная задача.</strong> Выделите все внутренние элементы там, где их больше 2, используя <code>background: &lt;color&gt;</code> и самую сильную магию</p>
 
-<main class="global-results">
-    <section class="global-result">
-        <article class="global-scope">
-            <div class="red-gt2">
-                <div></div>
-            </div>
-            <div class="red-gt2">
-                <div></div>
-                <div></div>
-            </div>
-            <div class="red-gt2">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="red-gt2">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </article>
-    </section>
+        <main class="global-results">
+            <style>
+                /* your styles here */
+            </style>
 
-    <section class="global-result">
-        <img class="global-goal">
-    </section>
-</main>
+            <section class="global-result">
+                <article class="global-scope">
+                    <div class="red-gt2">
+                        <div></div>
+                    </div>
+                    <div class="red-gt2">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="red-gt2">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="red-gt2">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </article>
+            </section>
 
-<nav class="global-nav">
-    <a class="global-prev">Предыдущее</a>
-    <a class="global-next">Следующее</a>
-</nav>
+            <section class="global-result">
+                <img class="global-goal">
+            </section>
+        </main>
 
-<script src="../global.js"></script>
-</body>
+        <nav class="global-nav">
+            <a class="global-prev">Предыдущее</a>
+            <a class="global-next">Следующее</a>
+        </nav>
+
+        <script src="../global.js"></script>
+    </body>
 </html>

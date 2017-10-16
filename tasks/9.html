@@ -1,65 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>CSS Селекторс 2000</title>
+    <head>
+        <title>CSS Селекторс 2000</title>
 
-    <link rel="stylesheet" type="text/css" href="../global.css">
-    <style>
-        a
-        {
-            color: #6698ff;
-        }
+        <link rel="stylesheet" type="text/css" href="../global.css">
+    </head>
+    <body>
+        <h1 class="global-heading">&nbsp;</h1>
+        <p>Решите задачу, используя <code>color: &lt;color&gt;</code> и <code>opacity: &lt;value&gt;</code></p>
 
-        a:hover:visited
-        {
-            color: #ff6698;
-        }
+        <main class="global-results">
+            <style>
+                /* your styles here */
+            </style>
 
-        a:active:visited
-        {
-            color: #98ff66;
-        }
+            <section class="global-result">
+                <article class="global-scope">
+                    <a class="link" href="https://ya.ru">link</a>
+                    <a class="link">pseudolink</a>
+                </article>
+            </section>
 
-        a:visited
-        {
-            color: #ffb366;
-        }
+            <section class="global-result">
+                <img class="global-goal">
+            </section>
+        </main>
 
-        a:not([href])
-        {
-            color: black;
-        }
+        <nav class="global-nav">
+            <a class="global-prev">Предыдущее</a>
+            <a class="global-next">Следующее</a>
+        </nav>
 
-        a:not([href]):hover
-        {
-            opacity: .5;
-        }
-    </style>
-</head>
-<body>
-<h1 class="global-heading">&nbsp;</h1>
-<p>Решите задачу, используя <code>color: &lt;color&gt;</code> и <code>opacity: &lt;value&gt;</code>
-</p>
-
-<main class="global-results">
-    <section class="global-result">
-        <article class="global-scope">
-            <a class="link" href="https://ya.ru">link</a>
-            <a class="link">pseudolink</a>
-        </article>
-    </section>
-
-    <section class="global-result">
-        <img class="global-goal">
-    </section>
-</main>
-
-<nav class="global-nav">
-    <a class="global-prev">Предыдущее</a>
-    <a class="global-next">Следующее</a>
-</nav>
-
-<script src="../global.js"></script>
-</body>
+        <script src="../global.js"></script>
+    </body>
 </html>

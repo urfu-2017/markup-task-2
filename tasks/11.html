@@ -1,49 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>CSS Селекторс 2000</title>
+    <head>
+        <title>CSS Селекторс 2000</title>
 
-    <link rel="stylesheet" type="text/css" href="../global.css">
-    <style>
-        input[type='email']:focus
-        {
-            border: 3px solid #6698ff;
-        }
+        <link rel="stylesheet" type="text/css" href="../global.css">
+    </head>
+    <body>
+        <h1 class="global-heading">&nbsp;</h1>
+        <p>Решите задачу, используя <code>border: 3px solid &lt;color&gt;</code></p>
 
-        input[type='email']:invalid:not(:focus)
-        {
-            border: 3px solid #ff6698;
-        }
+        <main class="global-results">
+            <style>
+                /* your styles here */
+            </style>
 
-        input[type='email']:valid:not(:focus)
-        {
-            border: 3px solid #98ff66;
-        }
-    </style>
-</head>
-<body>
-<h1 class="global-heading">&nbsp;</h1>
-<p>Решите задачу, используя <code>border: 3px solid &lt;color&gt;</code></p>
+            <section class="global-result">
+                <article class="global-scope">
+                    <input type="email" placeholder="email" value="invalid-email" required>
+                    <input type="email" placeholder="email" value="email@yandex.ru" required>
+                </article>
+            </section>
 
-<main class="global-results">
-    <section class="global-result">
-        <article class="global-scope">
-            <input type="email" placeholder="email" value="invalid-email" required>
-            <input type="email" placeholder="email" value="email@yandex.ru" required>
-        </article>
-    </section>
+            <section class="global-result">
+                <img class="global-goal">
+            </section>
+        </main>
 
-    <section class="global-result">
-        <img class="global-goal">
-    </section>
-</main>
+        <nav class="global-nav">
+            <a class="global-prev">Предыдущее</a>
+            <a class="global-next">Следующее</a>
+        </nav>
 
-<nav class="global-nav">
-    <a class="global-prev">Предыдущее</a>
-    <a class="global-next">Следующее</a>
-</nav>
-
-<script src="../global.js"></script>
-</body>
+        <script src="../global.js"></script>
+    </body>
 </html>
