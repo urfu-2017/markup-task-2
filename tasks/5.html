@@ -11,13 +11,9 @@
 
         <main class="global-results">
             <style>
-                .global-scope :last-child 
+                input:checked ~ .tab
                 {
-                    background-color: #000;
-                }
-                
-                .tab 
-                {
+                    background: #000;
                     color: #fff;
                 }
             </style>
@@ -25,7 +21,7 @@
             <section class="global-result">
                 <article class="global-scope">
                     <label for="checkbox">Black Theme</label>
-                    <input id="checkbox" type="checkbox" checked><br>
+                    <input id="checkbox" type="checkbox"><br>
                     <div class="tab">Text</div>
                 </article>
             </section>
