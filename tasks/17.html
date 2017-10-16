@@ -11,14 +11,9 @@
 
         <main class="global-results">
             <style>
-                input:nth-of-type(n+5)
+                input:checked ~ input:not(:checked)
                 {
                     outline: 1px solid #ff6698;
-                }
-                
-                input:checked
-                {
-                    outline: none;
                 }
             </style>
 
