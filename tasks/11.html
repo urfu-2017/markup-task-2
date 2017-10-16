@@ -13,19 +13,24 @@
             <style>
                 /* your styles here */
 
-                input:first-child
+                input
                 {
-                    border: 3px solid #ff6698;
+                    border: 3px solid;
                 }
 
-                input:last-child
+                input:invalid
                 {
-                    border: 3px solid #98ff66;
+                    border-color: #ff6698;
                 }
-                
-                input:first-child:focus
+
+                input:valid
                 {
-                    border: 3px solid #6698ff;
+                    border-color: #98ff66;
+                }
+
+                input:focus
+                {
+                    border-color: #6698ff;
                 }
             </style>
 

@@ -15,18 +15,19 @@
 
                 div
                 {
-                    opacity: .7;
+                    opacity: .6;
                 }
 
-                div:hover
+                article:hover div
+                {
+                    opacity: .2;
+                }
+                
+                article div:hover
                 {
                     opacity: 1;
                 }
                 
-                article:hover div:not(:hover)
-                {
-                    opacity: .2;
-                }
             </style>
 
             <section class="global-result">
