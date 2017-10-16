@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>CSS Селекторс 2000</title>
 
         <link rel="stylesheet" type="text/css" href="../global.css">
@@ -12,7 +13,18 @@
         <main class="global-results">
             <section class="global-result">
                 <style>
-                    /* your styles here */
+                    .global-scope > :first-child, aside
+                    {
+                        background-color: #6698ff;
+                    }
+                    .c1
+                    {
+                        background-color: #ff6698;
+                    }
+                    #id
+                    {
+                        background-color: #98ff66;
+                    }
                 </style>
 
                 <article class="global-scope">
