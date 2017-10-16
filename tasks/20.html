@@ -11,7 +11,12 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div.red-gt2 div:nth-child(1):nth-last-child(n+3),
+                div.red-gt2 div:nth-child(2):nth-last-child(n+2),
+                div.red-gt2 div:nth-child(2):nth-last-child(n+2) ~ div
+                {
+                    background: rgb(255, 101, 150);
+                }
             </style>
 
             <section class="global-result">

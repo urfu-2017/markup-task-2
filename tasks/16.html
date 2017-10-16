@@ -11,7 +11,25 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                article.global-scope > div:empty
+                {
+                    background: rgb(255, 101, 150);
+                }
+
+                article.global-scope > div.c1
+                {
+                    background: rgb(104, 153, 248);
+                }
+
+                article.global-scope > div#id1.c2.c3.c4.c5.c6
+                {
+                    background: rgb(255, 177, 114);
+                }
+
+                article.global-scope > div.c7
+                {
+                    background: rgb(255, 254, 127) !important;
+                }
             </style>
 
             <section class="global-result">
