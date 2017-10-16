@@ -13,9 +13,7 @@
             <style>
                 /* your styles here */
                 
-                a[href='https://ya.ru'],
-                [href='http://vk.com'],
-                [href='//google.com']
+                a[href*='//']:not([href*='my-site'])
                 {
                     color: #ff6698;
                 }
