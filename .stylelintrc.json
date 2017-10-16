@@ -3,5 +3,5 @@
  "processors": ["stylelint-processor-html"],
  "rules": {
    "selector-no-id": null
- }
+}
 }

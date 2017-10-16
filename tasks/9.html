@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
@@ -11,7 +11,32 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+
+                a.link:hover
+                {
+                    opacity: .5;
+                }
+
+                a.link:active
+                {
+                    opacity: 1;
+                }
+
+                a.link[href]:visited
+                {
+                    color: #ffb366;
+                }
+
+                a.link[href]:hover
+                {
+                    color: #ff6698;
+                    opacity: 1;
+                }
+
+                a.link[href]:active
+                {
+                    color: #98ff66;
+                }
             </style>
 
             <section class="global-result">
