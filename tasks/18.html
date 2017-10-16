@@ -6,7 +6,20 @@
 
         <link rel="stylesheet" type="text/css" href="../global.css">
         <style>
-            /* your styles here */
+            div
+            {
+                opacity: .5;
+            }
+
+            .global-scope:hover > div
+            {
+                opacity: .2;
+            }
+
+            .global-scope > div:hover
+            {
+                opacity: 1;
+            }
         </style>
     </head>
     <body>

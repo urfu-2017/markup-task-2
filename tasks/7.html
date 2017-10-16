@@ -6,7 +6,16 @@
 
         <link rel="stylesheet" type="text/css" href="../global.css">
         <style>
-            /* your styles here */
+            div:first-child,
+            div:last-child
+            {
+                opacity: 1;
+            }
+
+            div:nth-child(n+2):nth-child(-n+3)
+            {
+                opacity: .5;
+            }
         </style>
     </head>
     <body>
