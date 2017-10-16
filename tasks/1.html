@@ -1,56 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>CSS Селекторс 2000</title>
+<head>
+    <title>CSS Селекторс 2000</title>
 
-        <link rel="stylesheet" type="text/css" href="../global.css">
-    </head>
-    <body>
-        <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
+    <link rel="stylesheet" type="text/css" href="../global.css">
+</head>
+<body>
+<h1 class="global-heading">&nbsp;</h1>
+<p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
 
-        <main class="global-results">
-            <section class="global-result">
-                <style>
-                    div
-                    {
-                        background-color: #6697ff;
-                    }
+<main class="global-results">
+    <section class="global-result">
+        <style>
+            div,
+            aside
+            {
+                background-color: #6697ff;
+            }
+            .c1
+            {
+                background-color: #ff6598;
+            }
+            #id
+            {
+                background-color: #98ff66;
+            }
+        </style>
 
-                    .c1
-                    {
-                        background-color: #ff6598;
-                    }
+        <article class="global-scope">
+            <div></div>
+            <div class="c1"></div>
+            <div id="id"></div>
+            <aside></aside>
+        </article>
+    </section>
 
-                    #id
-                    {
-                        background-color: #98ff66;
-                    }
+    <section class="global-result">
+        <img class="global-goal">
+    </section>
+</main>
 
-                    aside
-                    {
-                        background-color: #6697ff;
-                    }
-                </style>
+<nav class="global-nav">
+    <a class="global-prev">Предыдущее</a>
+    <a class="global-next">Следующее</a>
+</nav>
 
-                <article class="global-scope">
-                    <div></div>
-                    <div class="c1"></div>
-                    <div id="id"></div>
-                    <aside></aside>
-                </article>
-            </section>
-
-            <section class="global-result">
-                <img class="global-goal">
-            </section>
-        </main>
-
-        <nav class="global-nav">
-            <a class="global-prev">Предыдущее</a>
-            <a class="global-next">Следующее</a>
-        </nav>
-
-        <script src="../global.js"></script>
-    </body>
+<script src="../global.js"></script>
+</body>
 </html>

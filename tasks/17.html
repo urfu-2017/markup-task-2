@@ -11,10 +11,11 @@
 
         <main class="global-results">
             <style>
-                input[type='checkbox']:checked ~ input[type='checkbox']
+                input:checked ~ input:not(:checked)
                 {
                     outline: 1px solid #ff6698;
                 }
+
             </style>
 
             <section class="global-result">
