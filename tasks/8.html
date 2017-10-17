@@ -11,7 +11,8 @@
 
         <main class="global-results">
             <style>
-                [target='_blank']
+                a[href*='//']:not([href*='my-site']),
+                a[href^='http'][href*='://']:not([href*='my-site'])
                 {
                     color: #ff6698;
                 }
