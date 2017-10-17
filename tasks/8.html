@@ -11,7 +11,13 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                /* Убрал бы этот  not, но в задании
+                ссылки на внешние относительно my-site.ru ресурсы */
+
+                a:not([href*='my-site.ru'])[target='_blank']
+                {
+                    color: #ff6698;
+                }
             </style>
 
             <section class="global-result">
