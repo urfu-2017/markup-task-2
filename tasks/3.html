@@ -11,7 +11,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div:not(:empty)
+                {
+                    border: 2px solid #000;
+                }
+
+                div:empty
+                {
+                    background: rgb(104, 153, 248);
+                }
             </style>
 
             <section class="global-result">

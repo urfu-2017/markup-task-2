@@ -11,7 +11,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                input:checked
+                {
+                    outline: none;
+                }
+
+                input:checked ~ input:not(:checked)
+                {
+                    outline: 1px solid rgb(255, 101, 150);
+                }
             </style>
 
             <section class="global-result">
