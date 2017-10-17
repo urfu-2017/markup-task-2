@@ -11,14 +11,19 @@
 
         <main class="global-results">
             <style>
-                div:hover
+                article:hover > div:not(:hover)
                 {
-                    opacity: 1;
+                    opacity: .25;
                 }
 
                 div
                 {
                     opacity: .5;
+                }
+
+                div:hover
+                {
+                    opacity: 1;
                 }
             </style>
 
