@@ -11,9 +11,14 @@
 
         <main class="global-results">
             <style>
-                article + article
+                .global-scope article
                 {
                     border-top: 1px solid #000;
+                }
+                
+                .global-scope article:first-of-type
+                {
+                    border-top: none;
                 }
             </style>
 
