@@ -14,12 +14,8 @@
             <style>
                 /* великая магия: https://habrahabr.ru/post/252181/ */
 
-                .red-gt2 div:nth-last-child(n + 3):first-child ~ div
-                {
-                    background: #ff6698;
-                }
-
-                .red-gt2 div:nth-last-child(n + 3):first-child
+                .red-gt2 div:nth-last-child(n + 3) ~ div,
+                .red-gt2 div:nth-last-child(n + 3)
                 {
                     background: #ff6698;
                 }

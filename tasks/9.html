@@ -12,29 +12,29 @@
 
         <main class="global-results">
             <style>
-                .link[href^='https://ya.ru']:hover
+                .link[href]:active
                 {
-                    color: #ff6698;
+                    color: #98ff66;
                 }
 
-                .link[href^='https://ya.ru']:hover + .link
-                {
-                    opacity: .5;
-                }
-
-                .link[href^='https://ya.ru']:visited
+                .link[href]:visited
                 {
                     color: #ffb366;
                 }
 
-                .link[href^='https://ya.ru']:active
+                .link[href]:hover
                 {
-                    color: #98ff66;
+                    color: #ff6698;
                 }
-                
-                .link[href^='https://ya.ru']:active + .link
+
+                .link:not([href]):active
                 {
                     opacity: 1;
+                }
+
+                .link:not([href]):hover
+                {
+                    opacity: .5;
                 }
             </style>
 
