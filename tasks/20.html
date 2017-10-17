@@ -11,7 +11,8 @@
 
         <main class="global-results">
             <style>
-                div:nth-of-type(n+3) > div
+                div > div:nth-last-of-type(n+3),
+                div > div:nth-last-of-type(n+3) ~ div
                 {
                     background: #ff6698;
                 }
