@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+444444<!DOCTYPE html>
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
@@ -12,6 +12,12 @@
         <main class="global-results">
             <style>
                 /* your styles here */
+                div:not(:hover){
+                    opacity: 0.5;
+                }
+                article:hover div:not(:hover){
+                    opacity: 0.25;
+                }
             </style>
 
             <section class="global-result">
