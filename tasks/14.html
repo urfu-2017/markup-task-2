@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>CSS Селекторс 2000</title>
 
         <link rel="stylesheet" type="text/css" href="../global.css">
+        <style>
+            li::before
+            {
+                content: '+ ';
+            }
+        </style>
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
         <p>Решите задачу, используя <code>mozgi</code></p>
 
         <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
-
             <section class="global-result">
                 <article class="global-scope">
                     <ul>

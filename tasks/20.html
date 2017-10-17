@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>CSS Селекторс 2000</title>
 
         <link rel="stylesheet" type="text/css" href="../global.css">
+        <style>
+            .red-gt2 :nth-last-child(n+3),
+            .red-gt2 :nth-last-child(n+3) ~ div
+            {
+                background: #ff6698;
+            }
+        </style>
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
         <p><strong>Необязательная задача.</strong> Выделите все внутренние элементы там, где их больше 2, используя <code>background: &lt;color&gt;</code> и самую сильную магию</p>
 
         <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
-
             <section class="global-result">
                 <article class="global-scope">
                     <div class="red-gt2">

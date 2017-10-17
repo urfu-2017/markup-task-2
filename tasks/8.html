@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>CSS Селекторс 2000</title>
 
         <link rel="stylesheet" type="text/css" href="../global.css">
+        <style>
+            a
+            {
+                color: #6698ff;
+            }
+
+            a[rel='external'],
+            a[href^='http']:not([href*='my-site.ru'])
+            {
+                color: #ff6698;
+            }
+        </style>
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
         <p>Выделите только ссылки на внешние относительно my-site.ru ресурсы, используя <code>color: &lt;color&gt;</code></p>
 
         <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
-
             <section class="global-result">
                 <article class="global-scope">
                     <ul>

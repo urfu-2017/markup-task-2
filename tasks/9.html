@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>CSS Селекторс 2000</title>
 
         <link rel="stylesheet" type="text/css" href="../global.css">
+        <style>
+            a
+            {
+                color: #6698ff;
+            }
+
+            a:hover:visited
+            {
+                color: #ff6698;
+            }
+
+            a:active:visited
+            {
+                color: #98ff66;
+            }
+
+            a:visited
+            {
+                color: #ffb366;
+            }
+
+            a:not([href])
+            {
+                color: black;
+            }
+
+            a:not([href]):hover
+            {
+                opacity: .5;
+            }
+        </style>
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
         <p>Решите задачу, используя <code>color: &lt;color&gt;</code> и <code>opacity: &lt;value&gt;</code></p>
 
         <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
-
             <section class="global-result">
                 <article class="global-scope">
                     <a class="link" href="https://ya.ru">link</a>

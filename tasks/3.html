@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>CSS Селекторс 2000</title>
 
         <link rel="stylesheet" type="text/css" href="../global.css">
+        <style>
+            .global-scope > div
+            {
+                border: 2px solid #000;
+            }
+
+            .global-scope > div > div
+            {
+                background: #6698ff;
+            }
+        </style>
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
         <p>Решите задачу, используя <code>background: &lt;color&gt;</code> и <code>border: 2px solid #000</code></p>
 
         <main class="global-results">
-            <style>
-                /* your styles here */
-            </style>
-
             <section class="global-result">
                 <article class="global-scope">
                     <div>
