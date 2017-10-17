@@ -11,34 +11,11 @@
 
         <main class="global-results">
             <style>
-                a[href^='https://']
+                a[href^='https://']:not([href^='https://my-site']),
+                a[href^='http://']:not([href^='http://my-site']),
+                a[href^='//']:not([href^='//my-site'])
                 {
                     color: #ff6698;
-                }
-
-                a[href^='http://']
-                {
-                    color: #ff6698;
-                }
-
-                a[href^='//']
-                {
-                    color: #ff6698;
-                }
-
-                a[href^='https://my-site']
-                {
-                    color: blue;
-                }
-
-                a[href^='http://my-site']
-                {
-                    color: blue;
-                }
-
-                a[href^='//my-site']
-                {
-                    color: blue;
                 }
             </style>
 
