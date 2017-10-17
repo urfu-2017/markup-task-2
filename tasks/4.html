@@ -7,25 +7,33 @@
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>color: &lt;color&gt;</code></p>
+        <p>Решите задачу, используя <code>border-top: 1px solid #000</code></p>
 
         <main class="global-results">
             <style>
-                article p:first-child::first-letter
+                article article:nth-child(2n + 5)
                 {
-                    color: #ff6698;
+                    border-top: 1px solid #000;
+                    border-collapse: collapse;
                 }
 
-                article p:last-child::first-line
+                article article:nth-child(2n)
                 {
-                    color: #6698ff;
+                    border-top: 1px solid #000;
+                    border-collapse: collapse;
                 }
             </style>
 
             <section class="global-result">
                 <article class="global-scope">
-                    <p class="title">Яндекс</p>
-                    <p class="description"> российская транснациональная компания,<br>владеющая одноимённой системой поиска в Сети, интернет-порталами и службами в нескольких странах.</p>
+                    <h1>Заголовок</h1>
+                    <hr>
+                    <article>Первый</article>
+                    <article>Второй</article>
+                    <article>Третий</article>
+                    <article>Четвертый</article>
+                    <article>Пятый</article>
+                    <hr>
                 </article>
             </section>
 
