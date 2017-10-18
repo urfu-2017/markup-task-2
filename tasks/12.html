@@ -13,13 +13,12 @@
             <style>
                 /* your styles here */
 
-                .global-scope div:nth-of-type(2n+1)
+                div:not(:empty)
                 {
                     background: #ffb366;
                 }
 
-                .global-scope div,
-                .global-scope div:nth-of-type(5)
+                div:empty
                 {
                     background: #ff6;
                 }
@@ -28,15 +27,19 @@
 
             <section class="global-result">
                 <article class="global-scope">
+                    <div>
+                    </div>
+                    <div></div>
+                    <div>
+                    </div>
                     <div></div>
                     <div></div>
                     <div></div>
+                    <div>
+                    </div>
                     <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div>
+                    </div>
                 </article>
             </section>
 

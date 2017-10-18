@@ -13,15 +13,20 @@
             <style>
                 /* your styles here */
 
-                div 
-                {
-                    opacity: 1;
-                }
-
-                div:not(:hover)
+                div
                 {
                     opacity: .5;
                 }
+
+                article:hover div
+                {
+                    opacity: .3;
+                }
+
+                article div:hover
+                {
+                    opacity: 1;
+                }            
 
             </style>
 
