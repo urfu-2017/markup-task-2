@@ -11,7 +11,8 @@
 
         <main class="global-results">
             <style>
-                div:not(:nth-child(-n + 2)) > div:nth-child(n)
+                div > div:first-child:not(:last-child):not(:nth-last-child(2)),
+                div > div:first-child:not(:last-child):not(:nth-last-child(2)) ~ div
                 {
                     background-color: #ff6598;
                 }
