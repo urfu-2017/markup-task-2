@@ -18,12 +18,14 @@
                     opacity: .6;
                 }
 
-                :hover > div
+                /* I thought we shouldn't use wrappers in selectors */
+                /* that's the reason I left ':hover' alone before */
+                .global-scope:hover div
                 {
                     opacity: .4;
                 }
 
-                div:hover
+                .global-scope div:hover
                 {
                     opacity: 1;
                 }
