@@ -12,6 +12,17 @@
         <main class="global-results">
             <style>
                 /* your styles here */
+                /* I can't use :local-link */
+                /* so rules look a bit complex */
+                /* but in fact link may contain anything */
+                /* in path/query part */
+                /* these rules should highlight all the links not related to my-site.ru */
+
+                a[href^='//']:not([href^='//my-site.ru/']):not([href='//my-site.ru']),
+                a:not([href^='/']):not([href='my-site.ru']):not([href^='my-site.ru/']):not([href='http://my-site.ru']):not([href^='http://my-site.ru/']):not([href='https://my-site.ru']):not([href^='https://my-site.ru/'])
+                {
+                    color: #ff6698;
+                }
             </style>
 
             <section class="global-result">

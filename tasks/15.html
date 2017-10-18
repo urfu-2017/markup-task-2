@@ -12,6 +12,12 @@
         <main class="global-results">
             <style>
                 /* your styles here */
+                /* task says we should mark zip archives only */
+
+                a[href$='.zip'][download]::after
+                {
+                    content: ' ↓';
+                }
             </style>
 
             <section class="global-result">
