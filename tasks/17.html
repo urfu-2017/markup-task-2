@@ -11,14 +11,9 @@
 
         <main class="global-results">
             <style>
-                input[type='checkbox']:checked ~ input
+                input[type='checkbox']:checked ~ input:not(:checked)
                 {
                     outline: 1px solid #ff6698;
-                }
-
-                input:checked
-                {
-                    outline: none !important;
                 }
             </style>
 

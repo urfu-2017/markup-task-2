@@ -13,12 +13,17 @@
             <style>
                 div
                 {
-                    opacity: .2;
+                    opacity: .5;
                 }
 
                 div:hover
                 {
                     opacity: 1;
+                }
+                
+                article:hover div:not(:hover)
+                {
+                    opacity: .2;
                 }
             </style>
 
