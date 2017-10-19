@@ -11,14 +11,9 @@
 
         <main class="global-results">
             <style>
-                article > article
+                article > h1 ~ article:not(:first-of-type)
                 {
                     border-top: 1px solid #000;
-                }
-                
-                hr + article
-                {
-                    border-top: 0;
                 }
             </style>
 
