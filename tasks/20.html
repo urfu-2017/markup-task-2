@@ -7,11 +7,16 @@
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
-        <p><strong>Необязательная задача.</strong> Выделите все внутренние элементы там, где их больше 2, используя <code>background: &lt;color&gt;</code> и самую сильную магию</p>
+        <p><strong>Необязательная задача.</strong> Выделите все внутренние элементы там, где их больше 2, используя
+            <code>background: &lt;color&gt;</code> и самую сильную магию</p>
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div div:first-child:nth-last-child(n+3),
+                div div:first-child:nth-last-child(n+3) ~ div
+                {
+                    background: #ff6698;
+                }
             </style>
 
             <section class="global-result">
