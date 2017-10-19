@@ -11,7 +11,17 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                input:checked ~ .tab 
+                {
+                    background-color: #000;
+                    color: #fff;
+                }
+
+                input:not(:checked) ~ .tab 
+                {
+                    background-color: #fff;
+                    color: #000;
+                }
             </style>
 
             <section class="global-result">
