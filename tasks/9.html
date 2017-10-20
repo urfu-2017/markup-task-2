@@ -11,27 +11,22 @@
 
         <main class="global-results">
             <style>
-                .link:not([href]) :hover
-                {
-                    opacity: .5;
-                }
-                
-                .link[href] :visited
+                a[href]:visited
                 {
                     color: #ffb366;
                 }
-                
-                .link[href] :link
-                {
-                    color: #6698ff;
-                }
-                
-                .link[href] :hover
+
+                a[href]:hover
                 {
                     color: #ff6698;
                 }
-                
-                .link[href] :active
+
+                a[href]:hover:not(:active) + a
+                {
+                    opacity: .5;
+                }
+
+                a[href]:active
                 {
                     color: #98ff66;
                 }
