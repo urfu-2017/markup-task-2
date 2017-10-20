@@ -1,63 +1,56 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>CSS Селекторс 2000</title>
 
-<head>
-    <title>CSS Селекторс 2000</title>
+        <link rel="stylesheet" type="text/css" href="../global.css">
+    </head>
+    <body>
+        <h1 class="global-heading">&nbsp;</h1>
+        <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
 
-    <link rel="stylesheet" type="text/css" href="../global.css">
-</head>
+        <main class="global-results">
+            <style>
+                /* your styles here -*/
+                article > div:nth-child(odd)
+                {
+                    background-color: #ffb366;
+                }
+                article > div:nth-child(even),
+                article > div:nth-child(5)
+                {
+                    background-color: #ff6;
+                }
+            </style>
 
-<body>
-    <h1 class="global-heading">&nbsp;</h1>
-    <p>Решите задачу, используя
-        <code>background: &lt;color&gt;</code>
-    </p>
+            <section class="global-result">
+                <article class="global-scope">
+                    <div>
+                    </div>
+                    <div></div>
+                    <div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div>
+                    </div>
+                    <div></div>
+                    <div>
+                    </div>
+                </article>
+            </section>
 
-    <main class="global-results">
-        <style>
-            /* your styles here */
+            <section class="global-result">
+                <img class="global-goal">
+            </section>
+        </main>
 
-            article > div:nth-child(odd)
-            {
-                background-color: #ffb366;
-            }
+        <nav class="global-nav">
+            <a class="global-prev">Предыдущее</a>
+            <a class="global-next">Следующее</a>
+        </nav>
 
-            article > div:nth-child(even),
-            article > div:nth-child(5)
-            {
-                background-color: #ff6;
-            }
-        </style>
-
-        <section class="global-result">
-            <article class="global-scope">
-                <div>
-                </div>
-                <div></div>
-                <div>
-                </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div>
-                </div>
-                <div></div>
-                <div>
-                </div>
-            </article>
-        </section>
-
-        <section class="global-result">
-            <img class="global-goal">
-        </section>
-    </main>
-
-    <nav class="global-nav">
-        <a class="global-prev">Предыдущее</a>
-        <a class="global-next">Следующее</a>
-    </nav>
-
-    <script src="../global.js"></script>
-</body>
-
+        <script src="../global.js"></script>
+    </body>
 </html>
