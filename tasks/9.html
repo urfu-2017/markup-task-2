@@ -11,34 +11,34 @@
 
         <main class="global-results">
             <style>
-                .link:hover
-                {
-                    color: #ff6698;
-                }
-
-                .text:hover
+                a:hover
                 {
                     opacity: .5;
                 }
 
-                .text:active
+                a:active
                 {
                     opacity: 1;
                     color: #000;
                 }
 
-                .text:visited
+                a:visited
                 {
                     opacity: 1;
                     color: #000;
                 }
 
-                .link:active
+                a[href]:hover
+                {
+                    color: #ff6698;
+                }
+
+                a[href]:active
                 {
                     color: #98ff66;
                 }
                 
-                .link:visited
+                a[href]:visited
                 {
                     color: #ffb366;
                 }
@@ -47,7 +47,7 @@
             <section class="global-result">
                 <article class="global-scope">
                     <a class="link" href="https://ya.ru">link</a>
-                    <a class="text">pseudolink</a>
+                    <a class="link">pseudolink</a>
                 </article>
             </section>
 
