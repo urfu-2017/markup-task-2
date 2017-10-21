@@ -7,37 +7,40 @@
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
+        <p>Решите задачу, используя <code>color: &lt;color&gt;</code> и <code>opacity: &lt;value&gt;</code></p>
 
         <main class="global-results">
             <style>
-                div:first-child
+                a:first-child
                 {
-                    background-color: #ff6698;
+                    color: #6698ff;
                 }
 
-                div.c1
+                a:first-child:hover
                 {
-                    background-color: #6698ff;
+                    color: #ff6698;
                 }
 
-                div#id1
+                a:first-child:visited
                 {
-                    background-color: #ffb366;
+                    color: #ffb366;
                 }
 
-                div:last-child
+                a:first-child:active
                 {
-                    background-color: #ff6 !important;
+                    color: #98ff66;
+                }
+
+                a:last-child:hover
+                {
+                    opacity: .5;
                 }
             </style>
 
             <section class="global-result">
                 <article class="global-scope">
-                    <div></div>
-                    <div class="c1"></div>
-                    <div id="id1" class="c2 c3 c4 c5 c6"></div>
-                    <div class="c7" style="background-color: #fff" ></div>
+                    <a class="link" href="https://ya.ru">link</a>
+                    <a class="link">pseudolink</a>
                 </article>
             </section>
 
