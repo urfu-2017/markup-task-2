@@ -11,30 +11,23 @@
 
         <main class="global-results">
             <style>
-                div:nth-last-child(3n - 1):empty
+                div:first-child:empty,
+                div:first-child:empty ~ div
                 {
                     background-color: #ff6698;
                 }
-
-                div:first-child:empty
+                div:last-child:empty
+                {
+                    background-color: white !important;
+                }
+                div:nth-child(2n):empty ~ div
+                {
+                    background-color: #ff6698 !important;
+                }
+                div:nth-last-child(1000000n + 2):empty
                 {
                     background-color: white;
                 }
-
-                div:nth-child(4n):empty,
-                div:nth-child(3n):empty,
-                div:nth-last-child(3n):empty,
-                div:nth-last-child(4n):empty
-                {
-                    background-color: #ff6698;
-                }
-
-                /*
-                Если появятся div-ы с большим числом элементов -
-                легко дописать ещё тегов вида div:nth-child(kn) и
-                 div:nth-last-child(kn) с нужными k так, чтобы покрыть и их.
-                 При этом, это никак не отразится на div-ах с меньшим числом элементов.
-                */
             </style>
 
             <section class="global-result">
