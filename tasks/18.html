@@ -16,9 +16,14 @@
                     opacity: .5;
                 }
 
-                div:hover
+                .global-scope:hover div:hover
                 {
                     opacity: 1;
+                }
+
+                .global-scope:hover div:not(:hover)
+                {
+                    opacity: .25;
                 }
             </style>
 
