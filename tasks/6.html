@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>CSS Селекторс 2000</title>
 
         <link rel="stylesheet" type="text/css" href="../global.css">
@@ -11,7 +12,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                [href]
+                {
+                    color: #6698ff;
+                }
+
+                [href*='yandex.ru']
+                {
+                    color: #ff6698;
+                }
             </style>
 
             <section class="global-result">
