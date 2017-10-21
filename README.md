@@ -24,3 +24,5 @@
 ![](https://dummyimage.com/15/ffff66.jpg?text=+)`#ffff66`  
 ![](https://dummyimage.com/15/98ff66.jpg?text=+)`#98ff66`  
 ![](https://dummyimage.com/15/6698ff.jpg?text=+)`#6698ff`
+
+:)
