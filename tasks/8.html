@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
@@ -11,7 +11,16 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                a[href^='/']:not([href*='//']),
+                a[href*='my-site.ru']
+                {
+                    color: blue;
+                }
+
+                a
+                {
+                    color: #ff6698;
+                }
             </style>
 
             <section class="global-result">

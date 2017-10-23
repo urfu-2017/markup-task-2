@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
@@ -11,7 +11,25 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div:first-child
+                {
+                    background: #ff6698;
+                }
+                
+                .c1
+                {
+                    background: #6698ff !important;
+                }
+
+                div#id1
+                {
+                    background: #ffb366;
+                }
+
+                .c7
+                {
+                    background: #ff6 !important;
+                }
             </style>
 
             <section class="global-result">
@@ -19,7 +37,7 @@
                     <div></div>
                     <div class="c1"></div>
                     <div id="id1" class="c2 c3 c4 c5 c6"></div>
-                    <div class="c7" style="background-color: #fff" ></div>
+                    <div class="c7" style="background-color: #ff60" ></div>
                 </article>
             </section>
 
