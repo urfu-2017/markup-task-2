@@ -8,11 +8,10 @@
     <body>
         <h1 class="global-heading">&nbsp;</h1>
         <p>Выделите только ссылки на внешние относительно my-site.ru ресурсы, используя <code>color: &lt;color&gt;</code></p>
-        <!-- Нужно добавить  article, но так слишком много символов в строку, не понял как перенести-->
         <main class="global-results">
             <style>
                 
-                a:not([href^='http://my-site.ru']):not([href^='//my-site.ru']):not([href^='/http/info'])
+                a[target='_blank']
                 {
                     color: #ff6698;
                 }
