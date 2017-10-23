@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CSS Селекторс 2000</title>
-
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
@@ -11,7 +11,11 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope > ul > li:before
+                {
+                    content: '\002b';
+                    padding-right: 3px;
+                }
             </style>
 
             <section class="global-result">
