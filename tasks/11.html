@@ -11,13 +11,26 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                input:valid
+                {
+                    border: 3px solid #98ff66;
+                }
+
+                input:invalid
+                {
+                    border: 3px solid #ff6698;
+                }
+
+                input:focus
+                {
+                    border: 3px solid #6698ff;
+                }
             </style>
 
             <section class="global-result">
                 <article class="global-scope">
-                    <input type="email" placeholder="email" value="invalid-email" required>
-                    <input type="email" placeholder="email" value="email@yandex.ru" required>
+                    <input class="first" type="email" placeholder="email" value="invalid-email" required>
+                    <input class="second" type="email" placeholder="email" value="email@yandex.ru" required>
                 </article>
             </section>
 
