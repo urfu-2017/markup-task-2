@@ -11,7 +11,35 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .global-scope div
+                {
+                    background: #feb265;
+                }
+
+                .global-scope div div
+                {
+                    background: #fff;
+                }
+
+                .global-scope div:first-child div:last-child
+                {
+                    background: #97ff66;
+                }
+
+                .global-scope div:last-child div:first-child
+                {
+                    background: #fdff65;
+                }
+
+                .global-scope :nth-child(2) :nth-child(2n)
+                {
+                    background: #ff6698;
+                }
+
+                .global-scope :nth-child(3) :nth-child(2n + 1)
+                {
+                    background: #6698ff;
+                }
             </style>
 
             <section class="global-result">
