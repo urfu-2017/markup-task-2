@@ -11,8 +11,12 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
-            </style>
+
+                a[href$='.zip'][download]::after
+                {
+                    content: ' ↓';
+                }
+            </style>zip
 
             <section class="global-result">
                 <article class="global-scope">

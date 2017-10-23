@@ -8,10 +8,28 @@
     <body>
         <h1 class="global-heading">&nbsp;</h1>
         <p>Решите задачу, используя <code>color: &lt;color&gt;</code> и <code>opacity: &lt;value&gt;</code></p>
-
         <main class="global-results">
             <style>
-                /* your styles here */
+
+                a[href='https://ya.ru']:hover
+                {
+                    color: #ff6698;
+                }
+
+                a[href='https://ya.ru']:active
+                {
+                    color: #98ff66;
+                }
+
+                a[href='https://ya.ru']:visited
+                {
+                    color: #ffb366;
+                }
+
+                a:not([href]):hover
+                {
+                    color: grey;
+                }
             </style>
 
             <section class="global-result">
