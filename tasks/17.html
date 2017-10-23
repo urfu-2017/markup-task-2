@@ -11,9 +11,13 @@
 
         <main class="global-results">
             <style>
-                input:nth-child(n+6):not(:checked)
+                :checked ~ input
                 {
                     outline: 1px solid #ff6698;
+                }
+                :checked
+                {
+                    outline: none;
                 }
             </style>
 
