@@ -11,7 +11,33 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                .link[href]:hover
+                {
+                    color: #ff6698;
+                    opacity: 1;
+                }
+
+                a[href]:hover + a,
+                a:hover
+                {
+                    opacity: .5;
+                }
+
+                .link[href]:focus
+                {
+                    color: #98ff66;
+                }
+
+                .link[href]:focus + a,
+                a:active
+                {
+                    opacity: 1;
+                }
+
+                .link:visited
+                {
+                    color: #ffb366;
+                }                    
             </style>
 
             <section class="global-result">
