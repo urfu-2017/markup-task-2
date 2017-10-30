@@ -8,30 +8,25 @@
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>border: 3px solid &lt;color&gt;</code></p>
+        <p>Решите задачу, используя <code>color: &lt;color&gt;</code></p>
 
         <main class="global-results">
             <style>
-                input:invalid
+                [href*='yandex.ru']
                 {
-                    border: 3px solid #ff6698;
+                    color: #ff6698;
                 }
-
-                input:valid
+                [href$='vk.ru']
                 {
-                    border: 3px solid #98ff66;
-                }
-
-                input:focus
-                {
-                    border: 3px solid #6698ff;
+                    color: #6698ff;
                 }
             </style>
 
             <section class="global-result">
                 <article class="global-scope">
-                    <input type="email" placeholder="email" value="invalid-email" required>
-                    <input type="email" placeholder="email" value="email@yandex.ru" required>
+                    <a href="https://vk.ru">vk.ru</a>
+                    <a href="https://yandex.ru">yandex.ru</a>
+                    <a href="https://market.yandex.ru/">market.yandex.ru</a>
                 </article>
             </section>
 

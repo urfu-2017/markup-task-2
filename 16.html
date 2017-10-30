@@ -8,30 +8,34 @@
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>border: 3px solid &lt;color&gt;</code></p>
+        <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
 
         <main class="global-results">
             <style>
-                input:invalid
-                {
-                    border: 3px solid #ff6698;
-                }
-
-                input:valid
-                {
-                    border: 3px solid #98ff66;
-                }
-
-                input:focus
-                {
-                    border: 3px solid #6698ff;
-                }
+               .global-scope :first-child
+               {
+                   background:#ff6698;
+               }
+               div.c1
+               {
+                   background:#6698ff;
+               }
+               div#id1
+               {
+                   background:#ffb366;
+               }
+               .c7
+               {
+                   background:#ffff66 !important;
+               }
             </style>
 
             <section class="global-result">
                 <article class="global-scope">
-                    <input type="email" placeholder="email" value="invalid-email" required>
-                    <input type="email" placeholder="email" value="email@yandex.ru" required>
+                    <div></div>
+                    <div class="c1"></div>
+                    <div id="id1" class="c2 c3 c4 c5 c6"></div>
+                    <div class="c7" style="background-color: #fff" ></div>
                 </article>
             </section>
 

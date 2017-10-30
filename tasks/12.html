@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>CSS Селекторс 2000</title>
 
         <link rel="stylesheet" type="text/css" href="../global.css">
@@ -11,7 +12,15 @@
 
         <main class="global-results">
             <style>
-                /* your styles here */
+                div
+                {
+                    background: #f66;
+                }
+
+                div:nth-of-type(2n+1):not(:nth-of-type(5))
+                {
+                    background: #ffb366;
+                }
             </style>
 
             <section class="global-result">

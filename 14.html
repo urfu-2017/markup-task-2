@@ -8,30 +8,27 @@
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>border: 3px solid &lt;color&gt;</code></p>
+        <p>Решите задачу, используя <code>mozgi</code></p>
 
         <main class="global-results">
             <style>
-                input:invalid
+                li
                 {
-                    border: 3px solid #ff6698;
+                    font-weight: bold;
                 }
-
-                input:valid
+                li:before
                 {
-                    border: 3px solid #98ff66;
-                }
-
-                input:focus
-                {
-                    border: 3px solid #6698ff;
+                    content: "+ ";
                 }
             </style>
 
             <section class="global-result">
                 <article class="global-scope">
-                    <input type="email" placeholder="email" value="invalid-email" required>
-                    <input type="email" placeholder="email" value="email@yandex.ru" required>
+                    <ul>
+                        <li>Первый</li>
+                        <li>Второй</li>
+                        <li>Третий</li>
+                    </ul>
                 </article>
             </section>
 
