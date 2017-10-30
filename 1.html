@@ -3,34 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <title>CSS Селекторс 2000</title>
+
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>background: &lt;color&gt;</code></p>
+        <p>Решите задачу, используя <code>opacity: &lt;value&gt;</code></p>
 
         <main class="global-results">
-            <section class="global-result">
-                <style>
-                    div, div + aside
-                    {
-                        background-color: #6698ff;
-                    }
-                    .c1 ~ div
-                    {
-                        background-color: #98ff66;
-                    }
-                    .c1
-                    {
-                        background-color: #ff6698;
-                    }
-                </style>
+            <style>
+                div
+                {
+                    opacity: .5;
+                }
 
+                div:hover
+                {
+                    opacity: 1;
+                }
+
+                article:hover > div:not(:hover)
+                {
+                    opacity: .3;
+                }
+            </style>
+
+            <section class="global-result">
                 <article class="global-scope">
                     <div></div>
-                    <div class="c1"></div>
-                    <div id="id"></div>
-                    <aside></aside>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </article>
             </section>
 
